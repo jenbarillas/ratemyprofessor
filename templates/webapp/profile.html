@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %}RateMyProfessor - Mi perfil{% endblock %}
+
+{% block content %}
+	<div class='container'>
+		<div class='row'>
+			<div class='col m6'>
+				<div class="card">
+					<div class="card-image">
+						<img src="{% static 'tempImages/avatar.png' %}">
+						<span class="card-title">Bryan Chan</span>
+					</div>
+					<div class="card-action">
+						<a href="#" class="blue-text">Facebook</a>
+					</div>
+				</div>
+			</div>
+
+			<div class='col m6'>
+				<br>
+				<div>
+					Carrera: Ingenieria en Ciencias de la Computacion y TI
+				</div>
+				<br>
+				<div>
+					Estoy interesado en: <br><br>
+					<div class="chip">Jane Doe</div>
+					<div class="chip">Jane Doe</div>
+					<div class="chip">Jane Doe</div>
+					<div class="chip">Jane Doe</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+			<a class="btn-floating btn-large red modal-trigger green darken-4" data-target="addModal" id='addModalTrigger'>
+				<i class="large material-icons">add</i>
+			</a>
+		</div>
+
+		<!-- Modal Structure -->
+		<div id="addModal" class="modal bottom-sheet">
+			<div class="modal-content">
+				<h4>Modal Header</h4>
+				<p>A bunch of text</p>
+			</div>
+			<div class="modal-footer">
+				<a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+			</div>
+		</div>
+
+		<div class='row'>
+			<div class='col s12'>
+				<div class="card">
+					<div class="card-content">
+						<div class='row'>
+							<div class="col m3">
+								<div>
+									Ingenieria de Software
+								</div>
+								<div>
+									Lynette Garcia
+								</div>
+							</div>
+
+							<div class="col m3">
+								<i class="small material-icons">star</i>
+								<i class="small material-icons">star</i>
+								<i class="small material-icons">star</i>
+								<i class="small material-icons">star</i>
+								<i class="small material-icons">star</i>
+							</div>
+
+							<div class="col m6">
+								Me gusto el curso, pero habian muchas tareas.
+								Me gusto el curso, pero habian muchas tareas.
+								Me gusto el curso, pero habian muchas tareas.
+								Me gusto el curso, pero habian muchas tareas.
+								Me gusto el curso, pero habian muchas tareas.
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col s12">
+								<div class="right-align">
+									Bryan Chan - Ingenieria en Ciencias de la Computacion y TI
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-content">
+						<div class='row'>
+							<div class="col m3">
+								<div>
+									Comunicacion eficaz
+								</div>
+								<div>
+									Maria Zaghi
+								</div>
+							</div>
+
+							<div class="col m3">
+								<i class="small material-icons">star</i>
+								<i class="small material-icons">star</i>
+								<i class="small material-icons">star</i>
+								<i class="small material-icons">star_border</i>
+								<i class="small material-icons">star_border</i>
+							</div>
+
+							<div class="col m6">
+								Me gusto el curso, pero habian muchas tareas.
+								Me gusto el curso, pero habian muchas tareas.
+								Me gusto el curso, pero habian muchas tareas.
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col s12">
+								<div class="right-align">
+									Bryan Chan - Ingenieria en Ciencias de la Computacion y TI
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+{% endblock %}
+
+{% block readyScripts %}
+		$('.modal').modal();
+{% endblock %}
